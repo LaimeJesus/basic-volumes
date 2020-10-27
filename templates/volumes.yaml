@@ -1,4 +1,4 @@
-{{ range .Values.services.definitions }}
+{{ range .Values.volumes }}
 ---
 apiVersion: v1
 kind: PersistentVolume
