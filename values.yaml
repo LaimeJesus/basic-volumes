@@ -1,5 +1,7 @@
 
+
 storageClassName: manual
+createStorageClass: False
 
 volumes:
   - name: kobotoolbox-backups-kobocat

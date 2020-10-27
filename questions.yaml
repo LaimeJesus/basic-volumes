@@ -1,0 +1,18 @@
+categories:
+- Volumes
+questions: 
+# Volumes
+- variable: manual
+  label: Storage Class Name
+  description: Storage Class Name of each Persistent Volume
+  group: Volumes
+  default: manual
+  required: true
+  type: string
+- variable: createStorageClass
+  label: Create Storage Class
+  description: Is necessary to create a Storage Class?
+  group: StorageClass
+  default: false
+  required: true
+  type: bool
