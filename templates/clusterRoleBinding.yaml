@@ -8,4 +8,4 @@ roleRef:
   name: {{ .Values.clusterRole }}
 subjects:
   - kind: ServiceAccount
-    name: {{ .Values.serviceAccount }}
+    name: {{ .Values.serviceAccountName }}
