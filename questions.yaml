@@ -2,34 +2,32 @@ categories:
 - Volumes
 questions:
 # Volumes
-- variable: serviceAccountCreate
-  label: Service Account Create
-  description: Should create Service Account 
-  group: ServiceAccount
+- variable: createServiceAccount
+  label: Create Service Account
+  description: Should create a Service Account?
+  group: Service Account
   default: false
   required: true
-  type: bool
+  type: boolean
   show_subquestion_if: true
   subquestions:
     - variable: serviceAccountName
       label: Service Account Name
-      description: Service Account Name
-      group: ServiceAccount
+      group: Service Account
       default: volumeCreator
       required: true
       type: string
-      show_if: serviceAccountCreate=true
-- variable: manual
+- variable: createStorageClass
+  label: Create Storage Class
+  description: Should create a Storage Class?
+  group: Storage Class
+  default: false
+  required: true
+  type: boolean
+- variable: storageClassName
   label: Storage Class Name
   description: Storage Class Name of each Persistent Volume
-  group: Volumes
+  group: Storage Class
   default: manual
   required: true
   type: string
-- variable: createStorageClass
-  label: Create Storage Class
-  description: Is necessary to create a Storage Class?
-  group: StorageClass
-  default: false
-  required: true
-  type: bool

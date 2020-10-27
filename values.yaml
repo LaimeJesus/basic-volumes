@@ -1,8 +1,8 @@
 
-storageClassName: manual
 createStorageClass: False
+storageClassName: manual
 
-serviceAccountCreate: False
+createServiceAccount: False
 serviceAccountName: volumeCreator
 clusterRole: volumeCreator
 clusterRoleBinding: volumeCreatorBinding
