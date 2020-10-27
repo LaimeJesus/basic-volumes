@@ -3,12 +3,12 @@ entries:
   basic-volumes:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-10-27T17:23:42.294949225-03:00"
+    created: "2020-10-27T17:48:17.729850264-03:00"
     description: A Helm chart for Kubernetes
-    digest: b2901c5958d10c97e4b48769452acd966444f98117d9a72dfacce2d9e3c7cb68
+    digest: 5816d6ed6fb6974f8c79fb40b075f0f7f6d94d28ed336a696af7413fc65d56e4
     name: basic-volumes
     type: application
     urls:
     - https://laimejesus.github.io/basic-volumes/basic-volumes-0.1.1.tgz
     version: 0.1.1
-generated: "2020-10-27T17:23:42.292792801-03:00"
+generated: "2020-10-27T17:48:17.728870694-03:00"

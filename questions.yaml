@@ -1,40 +1,34 @@
 categories:
 - Volumes
 questions:
-- variable: createServiceAccount
-  label: Create Service Account
-  description: Should create a Service Account?
-  group: Service Account
-  default: false
-  required: true
-  type: boolean
-  show_subquestion_if: true
-  subquestions:
-    - variable: serviceAccountName
-      label: Service Account Name
-      group: Service Account
-      default: volumeCreator
-      required: true
-      type: string
-    - variable: clusterRoleBindingNamespace
-      label: Cluster Role Binding Namespace
-      group: Service Account
-      default: default
-      required: true
-      type: string
-- variable: createStorageClass
-  label: Create Storage Class
-  description: Should create a Storage Class?
-  group: Storage Class
-  default: false
-  required: true
-  type: boolean
-  show_subquestion_if: true
-  subquestions:
-    - variable: storageClassName
-      label: Storage Class Name
-      description: Storage Class Name of each Persistent Volume
-      group: Storage Class
-      default: manual
-      required: true
-      type: string
+  - variable: createServiceAccount
+    label: Create Service Account
+    description: Should create a Service Account?
+    group: Service Account
+    default: true
+    type: boolean
+    show_subquestion_if: true
+    subquestions:
+      - variable: serviceAccountName
+        label: Service Account Name
+        default: volumeCreator
+        type: string
+      - variable: clusterRoleBindingNamespace
+        label: Cluster Role Binding Namespace
+        default: default
+        type: string
+  - variable: createStorageClass
+    label: Create Storage Class
+    description: Should create a Storage Class?
+    group: Storage Class
+    default: true
+    type: boolean
+    show_subquestion_if: true
+    subquestions:
+      - variable: storageClassName
+        label: Storage Class Name
+        description: Storage Class Name of each Persistent Volume
+        group: Storage Class
+        default: manual
+        required: true
+        type: string
