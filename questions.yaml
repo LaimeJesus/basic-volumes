@@ -1,7 +1,24 @@
 categories:
 - Volumes
-questions: 
+questions:
 # Volumes
+- variable: serviceAccountCreate
+  label: Service Account Create
+  description: Should create Service Account 
+  group: ServiceAccount
+  default: false
+  required: true
+  type: bool
+  show_subquestion_if: true
+  subquestions:
+    - variable: serviceAccountName
+      label: Service Account Name
+      description: Service Account Name
+      group: ServiceAccount
+      default: volumeCreator
+      required: true
+      type: string
+      show_if: serviceAccountCreate=true
 - variable: manual
   label: Storage Class Name
   description: Storage Class Name of each Persistent Volume

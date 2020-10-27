@@ -1,7 +1,11 @@
 
-
 storageClassName: manual
 createStorageClass: False
+
+serviceAccountCreate: False
+serviceAccountName: volumeCreator
+clusterRole: volumeCreator
+clusterRoleBinding: volumeCreatorBinding
 
 volumes:
   - name: kobotoolbox-backups-kobocat
