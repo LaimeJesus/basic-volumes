@@ -13,10 +13,6 @@ questions:
         label: Service Account Name
         default: volumeCreator
         type: string
-      - variable: clusterRoleBindingNamespace
-        label: Cluster Role Binding Namespace
-        default: default
-        type: string
   - variable: createStorageClass
     label: Create Storage Class
     description: Should create a Storage Class?
