@@ -1,0 +1,84 @@
+
+storageClassName: manual
+
+volumes:
+  - name: kobotoolbox-backups-kobocat
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-backups-kobocat
+    type: DirectoryOrCreate
+  - name: kobotoolbox-backups-mongo
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-backups-mongo
+    type: DirectoryOrCreate
+  - name: kobotoolbox-backups-postgres
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-backups-postgres
+    type: DirectoryOrCreate
+  - name: kobotoolbox-log-kobocat
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-log-kobocat
+    type: DirectoryOrCreate
+  - name: kobotoolbox-log-kpi
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-log-kpi
+    type: DirectoryOrCreate
+  - name: kobotoolbox-log-nginx
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-log-nginx
+    type: DirectoryOrCreate
+  - name: kobotoolbox-log-rabbitmq
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-log-rabbitmq
+    type: DirectoryOrCreate
+  - name: kobotoolbox-secrets
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-secrets
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-db
+    storage: 1Gi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-db
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-kobocatmedia
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-kobocatmedia
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-kpimedia
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-kpimedia
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-mongo
+    storage: 1Gi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-mongo
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-redismaindata
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-redismaindata
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-static-kobocat
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-static-kobocat
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-static-kpi
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-static-kpi
+    type: DirectoryOrCreate
+  - name: kobotoolbox-vols-whoosh
+    storage: 100Mi
+    accessModes: ReadWriteOnce
+    path: /var/lib/tmp/kobotoolbox-vols-whoosh
+    type: DirectoryOrCreate
