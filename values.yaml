@@ -4,8 +4,9 @@ storageClassName: manual
 
 createServiceAccount: False
 serviceAccountName: volumeCreator
-clusterRole: volumeCreator
+clusterRole: storage-manage
 clusterRoleBinding: volumeCreatorBinding
+clusterRoleBindingNamespace: default
 
 volumes:
   - name: kobotoolbox-backups-kobocat

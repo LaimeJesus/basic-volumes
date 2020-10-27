@@ -1,7 +1,6 @@
 categories:
 - Volumes
 questions:
-# Volumes
 - variable: createServiceAccount
   label: Create Service Account
   description: Should create a Service Account?
@@ -17,6 +16,12 @@ questions:
       default: volumeCreator
       required: true
       type: string
+    - variable: clusterRoleBindingNamespace
+      label: Cluster Role Binding Namespace
+      group: Service Account
+      default: default
+      required: true
+      type: string
 - variable: createStorageClass
   label: Create Storage Class
   description: Should create a Storage Class?
@@ -24,10 +29,12 @@ questions:
   default: false
   required: true
   type: boolean
-- variable: storageClassName
-  label: Storage Class Name
-  description: Storage Class Name of each Persistent Volume
-  group: Storage Class
-  default: manual
-  required: true
-  type: string
+  show_subquestion_if: true
+  subquestions:
+    - variable: storageClassName
+      label: Storage Class Name
+      description: Storage Class Name of each Persistent Volume
+      group: Storage Class
+      default: manual
+      required: true
+      type: string
